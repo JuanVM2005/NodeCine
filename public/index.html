@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Cine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Reserva de Asientos - Cine</h1>
+
+
+  <div class="video-container">
+    <video class="cinema-video" autoplay loop controls>
+      <source src="Surprises.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </div>
+  
+  <div class="seats-container">
+    <div class="row">
+      <div class="seat available" data-id="1"></div>
+      <div class="seat available" data-id="2"></div>
+      <div class="seat available" data-id="3"></div>
+      <div class="seat available" data-id="4"></div>
+      <div class="seat available" data-id="5"></div>
+    </div>
+    <div class="row">
+      <div class="seat available" data-id="6"></div>
+      <div class="seat available" data-id="7"></div>
+      <div class="seat available" data-id="8"></div>
+      <div class="seat available" data-id="9"></div>
+      <div class="seat available" data-id="10"></div>
+    </div>
+  </div>
+
+  <div class="reservation-summary">
+    <h2>Resumen de Reserva</h2>
+    <p id="selected-seats">Asientos seleccionados: 0</p>
+    <p id="total-price">Total: $0</p>
+    <button id="reserve-btn" disabled>Reservar Asientos</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
